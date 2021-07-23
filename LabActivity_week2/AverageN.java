@@ -13,7 +13,7 @@ public static void main(String[] args) {
 		ary[i]=scan.nextFloat();
 	}
 	avg A=new avg();
-	float average=A.AG(ary);
+	float average=A.AVG(ary);
 	float sum=A.sum(ary);
 	System.out.println("Sum of entered numbers is:  "+sum);
 	System.out.println("Average of entered numbers is:  "+average);
@@ -28,7 +28,7 @@ class avg{
 			}
 		   return sum;
 	}
-	public float AG(float[] array){
+	public float AVG(float[] array){
 		   float sum=0;
 		   for(float num:array)
 			{
