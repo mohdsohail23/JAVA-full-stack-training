@@ -2,33 +2,41 @@ package LabActivity_week2;
 
 public class primitiveDATAtype {
 	public static void main(String[] args) {
-		//valid identifiers
-		int age=20;//= is assignment operator
-		int _age;
-		int $age;
-		int _2a$e;
-		int a2_$e;
+		//compatible types
 		
-//		//invalid identifiers
-//		int 2age;//you cannot start the identifier with a number
-//		int @age;//you cannot start the identifier with a special character other than $ and _
-//		int a g e;//you cannot have space between the characters
-//		int package;//you cannot have a keyword as a variable name
+		byte b=127;
+		short s=b;
+		int i=s;
+		long l=i;
 		
-		//initialization
-		long l=233323;//64 bit
-		int i=3434;//32 bit
-		short s=32767;//size is 16 bit and range is -32768 to 32767
-		byte b=127;//size is 8 bit and range is -128 to 127
+		l=257;//re initialize the long variable
+		System.out.println("long value..:"+l);
+		i=(int)l;//converting the 64 bit to 32
+		System.out.println("int value..:"+i);
+		s=(short)i;
+		System.out.println("short value..:"+s);
+		b=(byte)s;
+		System.out.println("byte value..:"+b);	
 		
-		double d=234.56;//64 bit
-		float myfloat=344.455f;//32 bit
+		//auto promotion
+		byte mybite1=120;
+		byte mybite2=2;
+		byte result=(byte)(mybite1*mybite2);//when two bytes are multiplied then the result will be int (auto promotion)
+		System.out.println(result);
+		int myint=mybite1*mybite2;
+		System.out.println(myint);
 		
-		char c='h';
+		double d=23.45;//64 bit
+		float myf=(float)d;//32 bit
+		System.out.println(myf);
 		
-		boolean boo=true;
-		boolean boo2=false;
+		char ch='a';//number type
+		byte myfloat=(byte)ch;
+		System.out.println(myfloat);
 		
+		short myshortch=64;
+		char ccc=(char)myshortch;
+		System.out.println(ccc);
 	}
 }
 
