@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PrimeNumbers {
 //a) To generate a Prime number list between 1 to 100
 	public static void main(String[] args) {
-		System.out.println("Enter any number:");
+		System.out.println("Enter the number till which prime numbers is to be printed  : ");
 		Scanner scan=new Scanner(System.in);
 		int n=scan.nextInt();
      String prime=" ";
@@ -25,8 +25,5 @@ public class PrimeNumbers {
      System.out.println("prime no. are:");
      System.out.println(prime);
      System.out.println("no of prime no.are   :"+c2);
-     int b=17%1;
-     System.out.println(b);
      }
- //
 }
