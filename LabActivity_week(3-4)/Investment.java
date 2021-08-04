@@ -14,11 +14,15 @@ public static void main(String[] args) {
 	OP.setinvest(inv);
 	do {
 		x++;
+		System.out.println("----------------------------------------");
 		System.out.println("      YEAR "+x);
 		year--;
-	System.out.println("press 1 for profit ");
+		System.out.println("----------------------------------------");
+	System.out.print("press 1 for profit    /   ");
 	System.out.println("press 2 for loss ");
 	int in=scan.nextInt();
+	System.out.println("----------------------------------------");
+
 	
 	float z=0;
 	if(in==1) {
@@ -45,7 +49,9 @@ class operation{
 	float i;
 	public void setinvest(float i) {
 		this.i=i;
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("Amount="+i);
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
 	}
 	public float profit(float n) {
 		float fa=i+(n/100)*i;
